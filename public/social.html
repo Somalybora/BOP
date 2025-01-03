@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="slide.css">
+		<link rel="stylesheet" href="w3.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Planète Enfants & Développement</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		<script src="path/to/your/carousel-library.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+		<style>
+			.search-form {
+				position: absolute;
+				top: 2rem;
+				right: 20rem;
+				width: 25rem;
+				height: 3rem;
+				background: #e9e9e9c0;
+				border-radius: .5rem;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				box-shadow: var(--box-shadow);
+				}
+
+				.search-form input {
+				height: 2rem;
+				width: 20rem;
+				margin-left: 10px;
+				background: none;
+				text-transform: none;
+				font-size: 1.3rem;
+				color: var(--black);
+				padding-right: 0 2.5rem;
+				}
+
+				 .search-form label {
+				font-size: 1.3rem;
+				margin-top: 10px;
+				padding-right: 1.5rem;
+				color: var(--black);
+				cursor: pointer;
+				}
+
+				 .search-form label:hover {
+				color: var(--green);
+				}
+				.w3-dropdown-hover {
+    			background-color: none;
+    			color: #000;
+				}
+		</style>
+	</head>
+	<body>
+		<div>
+		<!-- Navbar goes here -->
+		<nav class="bg-white light:bg-slate-900 rounded-sm px-12 py-8 ring-0 ring-slate-900/5 shadow-xl inline-flex justify-between w-full h-28 items-center z-50 border-1 fixed" style="font-family: Calibri;">
+			<div class="max-w-8xl mx-auto px-2">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-1">
+								<img src="image/logo_eng.png" alt="Logo" class="h-24 max-w-6xl">
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+                        <div class="md:hidden flex sm:hidden lg:flex items-center space-x-4 h-20 mt-6 bg-white">
+							<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="text-purple-700 bg-white hover:bg-white hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="about.html" class=" hover:text-purple-800 no-underline hover:no-underline">ABOUT US <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="background.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Background</a>
+									<hr>
+									<a href="importance.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">The Importance of ECCD</a>
+									<hr>
+									<a href="eccd.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">ECCD In Cambodia</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="resource.html" class="hover:text-purple-800 no-underline hover:no-underline">RESOURCES <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="official.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Officila & Reference Documents</a>
+									<hr>
+									<a href="rperson.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Resource Persons</a>
+									<hr>
+									<a href="https://moeys.gov.kh/en/early-childhood-education" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Useful Links</a>
+									<hr>
+									<a href="faq.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">FAQ</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="activity.html" class=" hover:text-purple-800 no-underline hover:no-underline">ACTIVITIES <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="psychomotricity.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Psychomotricity</a>
+									<hr>
+									<a href="science.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Science</a>
+									<hr>
+									<a href="social.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Social Activities</a>
+									<hr>
+									<a href="khmer.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Khmer</a>
+									<hr>
+									<a href="premaths.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Pre-Maths</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="teacher.html" class=" hover:text-purple-800 no-underline hover:no-underline">TEACHER TOOLBOX <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="classadmin.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Class Administration</a>
+									<hr>
+									<a href="teaching.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Teaching Materials</a>
+									<hr>
+									<a href="space.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Space/Decoration</a>
+									<hr>
+									<a href="material.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Material Productions</a>
+								  </div>
+							  </div>
+
+							<!--  <form action="" class="search-form sm:ml-20 lg:ml-28">
+								<input type="search" id="search-box" placeholder="Search here...">
+								<label for="search-box" class="fas fa-search"></label>
+							   </form> -->
+                          </div>
+						  <div class="w3-dropdown-hover whitespace-nowrap ml-10 mt-10 lg:gap-6">
+							<button class="bg-purple-600 hover:bg-purple-700 border-purple-600 h-12 w-40 rounded-md text-white hover:text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="tip&trick.html" class="hover:text-white no-underline hover:no-underline">TIPS & TRICKS</a></button>
+						  </div>
+						  <div class="w3-dropdown-hover ml-10 mt-12 whitespace-nowrap no-underline">
+							<button class="bg-white hover:bg-white text-purple-900 no-underline hover:text-purple-950 font-medium"><div class="rounded-full no-underline"><img src="image/uk.png" alt="en" class="h-10 no-underline bg-white"></div></button>
+							  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4">
+								<hr class="w-52 h-0.5 bg-orange-500">
+								<a href="index.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><div class="flex items-left rounded-full"><img src="image/uk.png" alt="en" class="h-10">&nbsp; English</div></a>
+								<hr>
+								<a href="index(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><div class="flex items-left rounded-full"><img src="image/world.png" alt="kh" class="h-10">&nbsp; Khmer~<span style="font-family: Siemreap;">ខ្មែរ</span></div></a>              
+							  </div>
+						  </div>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center ml-10">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-8 h-8 text-gray-500 hover:text-purple-600 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+		</nav>
+		<div class="hidden mobile-menu pt-[7.5rem] lg:flex">
+			<ul class="">
+				<li class="active block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover bg-inherit whitespace-nowrap ml-10">
+					  <button class="text-white bg-inherit text-2xl sm:text-xl lg:text-2xl font-medium"><a href="about.html" class=" hover:text-white no-underline hover:no-underline"><b>ABOUT US &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="background.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Background</a>
+						  <hr>
+						  <a href="importance.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">The Importance of ECCD</a>
+						  <hr>
+						  <a href="eccd.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">ECCD In Cambodia</a>
+						</div>
+					</div>
+				  </li>
+				  <hr>
+					<li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="resource.html" class="hover:text-white no-underline hover:no-underline"> <b>RESOURCES &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="official.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Officila & Reference Documents</a>
+						  <hr>
+						  <a href="rperson.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Resource Persons</a>
+						  <hr>
+						  <a href="https://moeys.gov.kh/en/early-childhood-education" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Useful Links</a>
+						  <hr>
+						  <a href="faq.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">FAQ</a>
+						</div>
+					</div>
+				  </li>
+							<hr>
+				  <li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="activity.html" class="hover:text-white no-underline hover:no-underline"><b>ACTIVITIES &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="psychomotricity.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Psychomotricity</a>
+						  <hr>
+						  <a href="science.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Science</a>
+						  <hr>
+						  <a href="social.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Social Activities</a>
+						  <hr>
+						  <a href="khmer.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Khmer</a>
+						  <hr>
+						  <a href="premaths.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Pre-Maths</a>
+						</div>
+					</div>
+				  </li>
+					<hr>
+				  <li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="teacher.html" class="hover:text-white no-underline hover:no-underline"><b>TEACHER TOOLBOX &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="classadmin.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Class Administration</a>
+						  <hr>
+						  <a href="teaching.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Teaching Materials</a>
+						  <hr>
+						  <a href="space.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Space/Decoration</a>
+						  <hr>
+						  <a href="material.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Material Productions</a>
+						</div>
+					</div>
+				  </li>
+				</ul>
+		</div>
+	</div>
+
+<!--header end-->
+<br>
+<!--slide start-->
+<section class="relative flex w-full">
+  <div class="slider">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner w-full">
+  
+      <div class="item active">
+      <img src="image/Activities/Psychomotricity/01-Field mission EU_Visit Kamot Arng standardized CPS_Pursat_20220113 (50).JPG" alt="social" class="object-fit w-full" style="width:100%; height:700px; object-fit:cover;">
+      <div class="carousel-caption absolute mb-52" style="font-family:Staatliches">
+        <p class="text-center items-center text-9xl shadow-slate-500" style="text-shadow: 1.5px 1.5px 6px #130f40;">SOCIAL ACTIVITIES</p>
+        <br>      
+      </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+  </section> 
+    <!--slide end-->
+    <br>
+    <section class="about text-left items-left justify-start sm:text-center sm:items-center sm:justify-center" style="font-family: Calibri;">
+      <br>
+      <div class="items-center justify-center flex mb-12">
+        <img src="image/box.png" alt="box" class="h-48 items-center justify-center">
+      </div>
+      <br>
+      <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+        <p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24">
+        Social studies cover a variety of activities, which allow the child to develop an openness to the world and to others, and many other skills.
+        </p>
+  </div> 
+  <hr class="w-2/6 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-amber-500"> <br>
+<div class="flex items-center justify-center mb-12 font-serif text-3xl">
+    <button id="toggleScriptButton" class="flex items-center justify-center w-64 h-16 rounded-lg bg-white hover:text-white hover:bg-purple-900/75 " style="font-family: Calibri;"><i class="fa-solid fa-chevron-down"></i>&nbsp; READ MORE</button>
+  </div>
+  <section class="bg-white" id="script" style="display: none;">
+    <div class="grid grid-cols-2 gap-12">
+    <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+      <p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-16">    
+        <b>Social studies include:</b> <br>
+		<br>
+		Art: Drawing, painting, folding, cutting, etc. <br>
+        <br>
+        Plastic art covers both expressive and creative activities that lead to concrete productions. These activities prepare the child for learning to write through graphics, but they also develop dexterity, motor skills, creativity, and a sense of aesthetics through drawing, painting, colouring and even manual work. <br>
+        The children discover different tools, supports, and materials and become familiar with colours. <br>
+<br>
+      Musical education <br>
+      <br>
+      Music education is an activity for learning rhythms and songs. It is about getting the child to 
+      recognise musical instruments, to love music, song and rhythm and to awaken hidden talents.
+        <br>
+        The aims of music education are to <br>
+        <br>
+        &emsp;&emsp;    • to develop the child’s phonatory organs <br>
+        &emsp;&emsp;    • to develop the child’s artistic sensitivity <br>
+        &emsp;&emsp;    • to improve their perceptive and discriminatory abilities through sounds and musical instruments.
+        <br>
+        In particular, songs enable children to acquire language through pronunciation and articulation 
+        exercises. The sequence of rhythmic words sensitizes the child to the rhythm of speech, 
+        intonation and also the structure of the language. Rhymes also prepare children for reading by 
+        making them aware of their language and the way sounds are combined to form words. Finally, 
+        songs work on memory and explore how to act with words in a fun way.                
+        <br>
+        Daily activities and good habits <br>
+        <br>
+        Practical life activities help to prepare the child to live in society, to acquire good habits and 
+        attitudes as well as behaviours enabling him/her to adapt to certain environmental 
+        requirements. <br>
+        <br>
+        They enable the child to : <br>
+        <br>
+    &emsp;&emsp;    • cultivate social and cultural values (respect for oneself, for others, for the public good, a 
+    spirit of sharing, solidarity, a sense of responsibility, tolerance, forgiveness, etc.). <br>
+    &emsp;&emsp;    • to develop imagination and critical thinking; <br>
+    &emsp;&emsp;    • to immerse themselves in the richness and values of their environment; <br>
+    &emsp;&emsp;    • to prepare for life as a responsible and useful citizen of his country. <br>
+	<br>
+	<b class="text-center text-5xl"><i class="fa-solid fa-down-long"></i>&nbsp; Exercises</b>
+      </p>
+    </div>
+
+  <div class="container mb-16"> 
+    <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+      <p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-16">    
+        Followings are our video resources you can view or download:
+              </p>
+    </div>
+    <div class="vid-container">
+      <iframe id="vid_frame" src="https://www.youtube.com/embed/playlist?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT" frameborder="0" width="560" height="315"></iframe>
+    </div>
+    <div class="vid-list-container">
+      <div class="vid-list">
+      
+        <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/7KwgmUd7Rjc?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/7KwgmUd7Rjc/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGFUgVyhlMA8=&rs=AOn4CLDTkY7vnEKX8kSgLAH8Yn8fVbjJGQ"></div>
+      <div class="desc" style="font-family: Battambang;">សន្ទនាការគ្រប់គ្រងអារម្មណ៍”ខឹង” / "Angry" Emotion Management Conversation</div>
+      </div>
+  
+      <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jXhNcdoWWQk?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+        <div class="thumb">
+          <img src="https://i.ytimg.com/vi/jXhNcdoWWQk/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGE8gVShlMA8=&rs=AOn4CLBRI_p_FFjVSWSKCsrzn1n5j6VhUg">
+        </div>
+        <div class="desc" style="font-family: Battambang;">
+          សូនរូបត្រី / Fish Image Creating
+        </div>
+      </div>
+      
+        <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/sZ4qPTfHkkY?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/sZ4qPTfHkkY/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGHIgOShBMA8=&rs=AOn4CLAhSlGsARHmRArAA9xKUdfLzWyGyA"></div>
+          <div class="desc" style="font-family: Battambang;">ចំការយើងស្រស់បំព្រង / Our Farm is Beautiful</div>
+        </div>
+
+        <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/-iY8Dm32-N4?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/-iY8Dm32-N4/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGFcgWShlMA8=&rs=AOn4CLAl8A0tRX7gifaTWX_tPjLX9uJvZg"></div>
+          <div class="desc" style="font-family: Battambang;">គូររូបផ្កា / Paint Flower Picture</div>
+        </div>
+
+        <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yWYXjmU22KQ?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/yWYXjmU22KQ/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGGUgQihCMA8=&rs=AOn4CLDQnZbLTULnu_EKv1tIBJoz38A2Wg"></div>
+          <div class="desc" style="font-family: Battambang;">គូរដោយសេរី / Draw Freely</div>
+        </div>
+
+        <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/lc53SgrUffw?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/lc53SgrUffw/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGGUgSShCMA8=&rs=AOn4CLCesLpUfqkhQSwZh1XV0bis9v8Rmw"></div>
+          <div class="desc" style="font-family: Battambang;">គូរផ្តាមស្លឹកឈើ / Draw Leaves</div>
+        </div>
+
+        <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/zPjl1RhEvXs?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/zPjl1RhEvXs/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGFwgWyhlMA8=&rs=AOn4CLAKl9G_5zQme26jIGbmVG7Tiu8K0g"></div>
+          <div class="desc" style="font-family: Battambang;">ត្បាញស្លឹកត្នោតនិងស្លឹកដូង / Weaving Palm and Coconut Leaves</div>
+        </div>
+    </div>
+  </div>
+  <div class="arrows">
+    <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+      <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+    </div>
+  </div> 
+</div>
+<h1 class="text-6xl text-center flex items-center justify-center mt-8 mb-12" style="font-family: Calibri;">The Activity Sheets Of Exercises Social</h1>
+<div class="flex items-center justify-center bg-purple-600">
+    <div class=" mt-10 grid gap-12 grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 mx-10 mb-24">
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="Activity Sheet English/Social/1-SOC.png" alt="1-PSC" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">GETTING TO KNOW MY COUNTRY.pdf</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="Activity Sheet English/Social/GETTING TO KNOW MY COUNTRY.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="Activity Sheet English/Social/GETTING TO KNOW MY COUNTRY.pdf" class="text-5xl hidden" id="downloadLink1" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('Activity Sheet English/Social/GETTING TO KNOW MY COUNTRY.pdf', 'downloadLink1')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="Activity Sheet English/Social/2-SOC.png" alt="2-PSC" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Calibri;">HAND PAINTING.pdf</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="Activity Sheet English/Social/HAND PAINTING.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="Activity Sheet English/Social/HAND PAINTING.pdf" class="text-5xl hidden" id="downloadLink2" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('Activity Sheet English/Social/HAND PAINTING.pdf', 'downloadLink2')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="Activity Sheet English/Social/3-SOC.png" alt="3-PSC" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Calibri;">Social/LOUD AND QUIET SOUND.pdf</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="Activity Sheet English/Social/LOUD AND QUIET SOUND.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="Activity Sheet English/Social/LOUD AND QUIET SOUND.pdf" class="text-5xl hidden" id="downloadLink3" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('Activity Sheet English/Social/LOUD AND QUIET SOUND.pdf', 'downloadLink3')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="Activity Sheet English/Social/4-SOC.png" alt="4-PSC" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">PUNCTUALITY.pdf</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="Activity Sheet English/Social/PUNCTUALITY.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="Activity Sheet English/Social/PUNCTUALITY.pdf" class="text-5xl hidden" id="downloadLink4" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('Activity Sheet English/Social/PUNCTUALITY.pdf', 'downloadLink4')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="Activity Sheet English/Social/5-SOC.png" alt="5-PSC" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">TAKING CARE OF THE ENVIRONMENT.pdf</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="Activity Sheet English/Social/TAKING CARE OF THE ENVIRONMENT.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="Activity Sheet English/Social/TAKING CARE OF THE ENVIRONMENT.pdf" class="text-5xl hidden" id="downloadLink5" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('Activity Sheet English/Social/TAKING CARE OF THE ENVIRONMENT.pdf', 'downloadLink5')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="Activity Sheet English/Social/6-SOC.png" alt="6-PSC" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">THE TRAFFIC LIGHTS.pdf</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="Activity Sheet English/Social/THE TRAFFIC LIGHTS.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="Activity Sheet English/Social/THE TRAFFIC LIGHTS.pdf" class="text-5xl hidden" id="downloadLink6" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('Activity Sheet English/Social/THE TRAFFIC LIGHTS.pdf', 'downloadLink6')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+</section>
+			<!--Footer start-->
+			<hr class="bg-orange-500 h-1">
+			<section class="bg-purple-900/85 w-full flex items-center justify-between h-auto text-xl sm:text-lg lg:text-md lg:items-left sm:justify-center lg:justify-between sm:items-center" style="font-family: Calibri;">
+			  <div class="flex flex-col lg:flex-row items-center justify-between w-full">
+				
+				<!-- Left Content Section -->
+				<div class="content mt-8 ml-24 px-3 w-full lg:w-auto lg:ml-8">
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">For information about this website please contact: <br>
+					Planète Enfants & Développement
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">43 Abdul Carime St. (21), Phnom Penh</p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">Office Hours:
+					Monday – Friday 09.00–13.30 hrs. & 14.00–17.00 hrs. (Except public holidays) <br>
+					Tel: +855 23 212 196
+				  </p>
+				  <br>
+				  <a href="https://web.facebook.com/PlaneteEnfantsetdeveloppementCambodia?_rdc=11&_rdr#" class="text-white text-3xl sm:text-xl lg:text-2xl no-underline hover:no-underline hover:text-blue-600">
+					<i class="fa-brands fa-facebook"></i>&ensp; Planète Enfants & Développement Cambodia
+				  </a>
+				</div>
+			
+				<!-- Right Box Section -->
+				<div class="box mt-16 ml-24 px-3 w-full lg:w-auto lg:ml-8">
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">For information about Preschool education in Cambodia please contact: <br>
+					Ministry of Education, Youth, and Sport
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">H.E PRAK KOSAL, Deputy Secretary General of NC-ECCD, and Director of Early Childhood <br>
+					Education Department, MoEYS
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">#201, Preah Norodom Blvd, Phnom Penh, Cambodia <br>
+					H/P: +855 12 824 256 <br>
+					Tel: +855 23 216 246 <br>
+					E-mail: echild.edu@gmail.com
+				  </p>
+				</div>
+				
+			  </div>
+			</section>
+      <!--Footer end-->
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+  
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+        let searchForm = document.querySelector('.search-form');
+  
+        document.querySelector('#search-btn').onclick = () => {
+          searchForm.classList.toggle('active');
+        }
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle('show');
+          }
+        window.onscroll = () =>{
+          searchForm.classList.remove('active');
+        }
+          //Button Script//
+          $(document).ready(function () {
+      $(".arrow-right").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "+=336"
+          }, 750);
+      });
+      $(".arrow-left").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "-=336"
+          }, 750);
+      });
+  });
+      </script>
+  </body>
+  </html>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const toggleScriptButton = document.getElementById('toggleScriptButton');
+          const scriptSection = document.getElementById('script');
+          
+          toggleScriptButton.addEventListener('click', function() {
+              if (scriptSection.style.display === "none") {
+                  scriptSection.style.display = "block";
+              } else {
+                  scriptSection.style.display = "none";
+              }
+          });
+      });
+	  function downloadFile(fileName, linkId) {
+          var downloadLink = document.getElementById(linkId);
+          downloadLink.click();
+        }
+  </script>
+<script>
+        document.getElementById('toggleAdminButton').addEventListener('click', function() {
+      const adminSection = document.getElementById('admin');
+      adminSection.classList.toggle('hidden');
+    });
+
+    document.getElementById('toggleTeachingButton').addEventListener('click', function() {
+      const teachingSection = document.getElementById('teaching');
+      teachingSection.classList.toggle('hidden');
+    });
+
+    document.getElementById('toggleSpaceButton').addEventListener('click', function() {
+      const spaceSection = document.getElementById('space');
+      spaceSection.classList.toggle('hidden');
+    });
+
+  </script>

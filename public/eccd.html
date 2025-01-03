@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="slide.css">
+		<link rel="stylesheet" href="w3.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Planète Enfants & Développement</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		<script src="path/to/your/carousel-library.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+		<style>
+			.search-form {
+				position: absolute;
+				top: 2rem;
+				right: 20rem;
+				width: 25rem;
+				height: 3rem;
+				background: #e9e9e9c0;
+				border-radius: .5rem;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				box-shadow: var(--box-shadow);
+				}
+
+				.search-form input {
+				height: 2rem;
+				width: 20rem;
+				margin-left: 10px;
+				background: none;
+				text-transform: none;
+				font-size: 1.3rem;
+				color: var(--black);
+				padding-right: 0 2.5rem;
+				}
+
+				 .search-form label {
+				font-size: 1.3rem;
+				margin-top: 10px;
+				padding-right: 1.5rem;
+				color: var(--black);
+				cursor: pointer;
+				}
+
+				 .search-form label:hover {
+				color: var(--green);
+				}
+				.w3-dropdown-hover {
+    			background-color: none;
+    			color: #000;
+				}
+		</style>
+	</head>
+	<body>
+		<div>
+		<!-- Navbar goes here -->
+		<nav class="bg-white light:bg-slate-900 rounded-sm px-12 py-8 ring-0 ring-slate-900/5 shadow-xl inline-flex justify-between w-full h-28 items-center z-50 border-1 fixed" style="font-family: Calibri;">
+			<div class="max-w-8xl mx-auto px-2">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-1">
+								<img src="image/logo_eng.png" alt="Logo" class="h-24 max-w-6xl">
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+                        <div class="md:hidden flex sm:hidden lg:flex items-center space-x-4 h-20 mt-6 bg-white">
+							<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="text-purple-700 bg-white hover:bg-white hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="about.html" class=" hover:text-purple-800 no-underline hover:no-underline">ABOUT US <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="background.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Background</a>
+									<hr>
+									<a href="importance.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">The Importance of ECCD</a>
+									<hr>
+									<a href="eccd.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">ECCD In Cambodia</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="resource.html" class="hover:text-purple-800 no-underline hover:no-underline">RESOURCES <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="official.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Officila & Reference Documents</a>
+									<hr>
+									<a href="rperson.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Resource Persons</a>
+									<hr>
+									<a href="https://moeys.gov.kh/en/early-childhood-education" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Useful Links</a>
+									<hr>
+									<a href="faq.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">FAQ</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="activity.html" class=" hover:text-purple-800 no-underline hover:no-underline">ACTIVITIES <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="psychomotricity.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Psychomotricity</a>
+									<hr>
+									<a href="science.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Science</a>
+									<hr>
+									<a href="social.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Social Activities</a>
+									<hr>
+									<a href="khmer.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Khmer</a>
+									<hr>
+									<a href="premaths.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Pre-Maths</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="teacher.html" class=" hover:text-purple-800 no-underline hover:no-underline">TEACHER TOOLBOX <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="classadmin.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Class Administration</a>
+									<hr>
+									<a href="teaching.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Teaching Materials</a>
+									<hr>
+									<a href="space.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Space/Decoration</a>
+									<hr>
+									<a href="material.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Material Productions</a>
+								  </div>
+							  </div>
+
+							<!--  <form action="" class="search-form sm:ml-20 lg:ml-28">
+								<input type="search" id="search-box" placeholder="Search here...">
+								<label for="search-box" class="fas fa-search"></label>
+							   </form> -->
+                          </div>
+						  <div class="w3-dropdown-hover whitespace-nowrap ml-10 mt-10 lg:gap-6">
+							<button class="bg-purple-600 hover:bg-purple-700 border-purple-600 h-12 w-40 rounded-md text-white hover:text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="tip&trick.html" class="hover:text-white no-underline hover:no-underline">TIPS & TRICKS</a></button>
+						  </div>
+						  <div class="w3-dropdown-hover ml-10 mt-12 whitespace-nowrap no-underline">
+							<button class="bg-white hover:bg-white text-purple-900 no-underline hover:text-purple-950 font-medium"><div class="rounded-full no-underline"><img src="image/uk.png" alt="en" class="h-10 no-underline bg-white"></div></button>
+							  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4">
+								<hr class="w-52 h-0.5 bg-orange-500">
+								<a href="index.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><div class="flex items-left rounded-full"><img src="image/uk.png" alt="en" class="h-10">&nbsp; English</div></a>
+								<hr>
+								<a href="index(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><div class="flex items-left rounded-full"><img src="image/world.png" alt="kh" class="h-10">&nbsp; Khmer~<span style="font-family: Siemreap;">ខ្មែរ</span></div></a>              
+							  </div>
+						  </div>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center ml-10">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-8 h-8 text-gray-500 hover:text-purple-600 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+		</nav>
+		<div class="hidden mobile-menu pt-[7.5rem] lg:flex">
+			<ul class="">
+				<li class="active block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover bg-inherit whitespace-nowrap ml-10">
+					  <button class="text-white bg-inherit text-2xl sm:text-xl lg:text-2xl font-medium"><a href="about.html" class=" hover:text-white no-underline hover:no-underline"><b>ABOUT US &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="background.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Background</a>
+						  <hr>
+						  <a href="importance.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">The Importance of ECCD</a>
+						  <hr>
+						  <a href="eccd.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">ECCD In Cambodia</a>
+						</div>
+					</div>
+				  </li>
+				  <hr>
+					<li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="resource.html" class="hover:text-white no-underline hover:no-underline"> <b>RESOURCES &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="official.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Officila & Reference Documents</a>
+						  <hr>
+						  <a href="rperson.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Resource Persons</a>
+						  <hr>
+						  <a href="https://moeys.gov.kh/en/early-childhood-education" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Useful Links</a>
+						  <hr>
+						  <a href="faq.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">FAQ</a>
+						</div>
+					</div>
+				  </li>
+							<hr>
+				  <li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="activity.html" class="hover:text-white no-underline hover:no-underline"><b>ACTIVITIES &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="psychomotricity.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Psychomotricity</a>
+						  <hr>
+						  <a href="science.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Science</a>
+						  <hr>
+						  <a href="social.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Social Activities</a>
+						  <hr>
+						  <a href="khmer.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Khmer</a>
+						  <hr>
+						  <a href="premaths.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Pre-Maths</a>
+						</div>
+					</div>
+				  </li>
+					<hr>
+				  <li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="teacher.html" class="hover:text-white no-underline hover:no-underline"><b>TEACHER TOOLBOX &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="classadmin.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Class Administration</a>
+						  <hr>
+						  <a href="teaching.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Teaching Materials</a>
+						  <hr>
+						  <a href="space.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Space/Decoration</a>
+						  <hr>
+						  <a href="material.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Material Productions</a>
+						</div>
+					</div>
+				  </li>
+				</ul>
+		</div>
+	</div>
+
+<!--header end-->
+<hr>
+<!--slide start-->
+<section class="relative flex w-full">
+  <div class="slider">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner w-full">
+  
+      <div class="item active">
+      <img src="image/Homepage-About the BOP/ECCD in Cambodia/01-Field visit EU_Prey Sbov CPS Kampot_20220324 (4).jpg" alt="eccd" class="object-fit w-full" style="width:100%; height:700px; object-fit:cover;">
+      <div class="carousel-caption absolute mb-52" style="font-family:Staatliches">
+        <p class="text-center items-center text-7xl shadow-slate-500" style="text-shadow: 1.5px 1.5px 6px #130f40;">ECCD IN CAMBODIA</p>
+        </div>
+      </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+  </section> 
+    <!--slide end-->
+	<section class="about text-left items-left justify-start sm:text-center sm:items-center sm:justify-center" style="font-family: Calibri;">
+		<br>
+		<div class="items-center justify-center flex mt-12 mb-12">
+		  <img src="image/box.png" alt="box" class="h-48 items-center justify-center">
+		</div><br>
+
+			<div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+			<p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24">The Cambodian government has been committed to ECCD for years and has adopted framework laws, drafted several
+				national policies and action plans, which have been implemented through different programmes,
+				but many difficulties and challenges remain.</p>
+		</div>
+		<hr class="w-2/5 h-1 mx-auto border-0 rounded mb-12 dark:bg-amber-500"> <br>
+
+<section class="bg-white" style="font-family: Calibri;">
+  <br>
+  <section class="block relative items-center justify-center mb-12">
+	<div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex">
+        <h1><b class="text-7xl w-2/4 text-orange-400" style="font-family: Calibri;">Historical Milestones</b> <br>
+          <br>
+		  <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex">
+			<p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24">
+			“State Preschools” were the first educational services provided to young children across the 
+            country. State Preschool Teachers have to pass a two-year pre-service training.
+            However, due to budgetary and human capital constraints, the provision of state preschools is 
+            limited and concentrated around urban and peri-urban areas.
+            Hence, the government chose to invest in cost-effective alternatives in order to reach a greater 
+            number of children: “Community-based preschools”. This model was first developped in 1997 by 
+            the NGOs Planète Enfants & Développement (PE&D), Plan International and Save the Children,
+            with support from the UNICEF, then scaled up nationwide in the following years. In 2019, there 
+            were 2 970 community preschools in Cambodia, reaching 69 914 children, including 36 073 girls.
+            Teaching is usually conducted by a community member, for 98% female, who has received a 
+            shorter training than state-preschool teachers. Pedagogy is similar to the one promoted within 
+            state preschools but the school environment differs, as there is often no proper facility (teaching 
+            is conducted within the pagoda compound or at a villager’s home).
+            In order to be standardized by the MoEYS and benefit from nearly similar funding than State 
+            preschools, CPS must meet minimum standards defined by the sub-decree on CPS management.
+            </p>
+          </div>
+        </h1>
+      </div>
+      <br>
+  </section>
+  <section class="block relative items-center justify-center mb-12">
+	<div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex">
+        <h1><b class="text-7xl w-2/4 text-orange-400" style="font-family: Calibri;">Legal Framework</b> <br>
+          <br>
+		  <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex">
+			<p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24">
+			Education is an integral part of Early Childhood Care and Development. In Cambodia, this right is 
+            protected by the Constitution.
+            Article 48: “the State shall assure the protection of children’s rights as enshrined in the Convention 
+            on Children, especially, the right to life, the right to education, the right to protection during 
+            wartime and the right to protection from economic or sexual exploitation”.
+            Early childcare and childhood education are defined in the law (Royal Kram No. 
+            NS/RKM/1207/032 on Education, 08 December 2007, art 16-17) as services provided for children 
+            aged between 0 and 6 years old.
+            Early childhood education is not a level of education but constitutes a preparation for the 
+            schooling period.
+            </p>
+          </div>
+        </h1>
+      </div>
+    </div>
+	<br>
+  </section>
+  <section class="block items-center justify-center mb-12">
+	<div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+    
+    <h1><b class="text-7xl w-2/4 text-orange-400" style="font-family: Calibri;">Main Challenges</b> <br>
+      <br>
+	  <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+		<p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24">According to UNICEF, since 2007, the number of children enrolled in preschool programmes has 
+        more than doubled. However, despite the considerable progress that has been made in education 
+        in Cambodia, many challenges remain. Only 27% of 3-5 year olds are developmentally appropriate 
+        in literacy and numeracy, and by the age of 17, 55% of adolescents will have dropped out of school 
+        (UNICEF). <br>
+		<br>
+        The main challenges for ECCD in Cambodia are the following: <br>
+        </p>
+      </div>
+	  <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+		<p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24 ml-24">
+           • Infrastructures: poor quality of learning environments, some places are not suitable for 
+          school, and lack of basic infrastructure, such as water, sanitation and hygiene (WASH) 
+          facilities <br>
+           • Lack of qualified teachers <br>
+           • Quality: the quality of preschools in Cambodia is uneven, particularly in terms of teaching 
+          and learning, due to a lack of resources and support <br>
+           • Parents’ unwillingness to send their children: many don’t understand the value of 
+          education and most cannot afford to send their children to school, particularly in rural and 
+          deprived areas. Gross enrollment rate for children age from 3 to 5 years in preschool is 
+          only 43% (UNICEF). <br>
+           • 90% of the poor live in rural areas, where there is a lack of State preschools <br>
+           • 60% of Community-based Preschools are functioning below minimum standards. <br>
+          </p>
+        </div>
+    </h1>
+  </div>
+</section>
+  <br>
+</section>
+</section>
+			<!--Footer start-->
+			<hr class="bg-orange-500 h-1">
+			<section class="bg-purple-900/85 w-full flex items-center justify-between h-auto text-xl sm:text-lg lg:text-md lg:items-left sm:justify-center lg:justify-between sm:items-center" style="font-family: Calibri;">
+			  <div class="flex flex-col lg:flex-row items-center justify-between w-full">
+				
+				<!-- Left Content Section -->
+				<div class="content mt-8 ml-24 px-3 w-full lg:w-auto lg:ml-8">
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">For information about this website please contact: <br>
+					Planète Enfants & Développement
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">43 Abdul Carime St. (21), Phnom Penh</p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">Office Hours:
+					Monday – Friday 09.00–13.30 hrs. & 14.00–17.00 hrs. (Except public holidays) <br>
+					Tel: +855 23 212 196
+				  </p>
+				  <br>
+				  <a href="https://web.facebook.com/PlaneteEnfantsetdeveloppementCambodia?_rdc=11&_rdr#" class="text-white text-3xl sm:text-xl lg:text-2xl no-underline hover:no-underline hover:text-blue-600">
+					<i class="fa-brands fa-facebook"></i>&ensp; Planète Enfants & Développement Cambodia
+				  </a>
+				</div>
+			
+				<!-- Right Box Section -->
+				<div class="box mt-16 ml-24 px-3 w-full lg:w-auto lg:ml-8">
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">For information about Preschool education in Cambodia please contact: <br>
+					Ministry of Education, Youth, and Sport
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">H.E PRAK KOSAL, Deputy Secretary General of NC-ECCD, and Director of Early Childhood <br>
+					Education Department, MoEYS
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">#201, Preah Norodom Blvd, Phnom Penh, Cambodia <br>
+					H/P: +855 12 824 256 <br>
+					Tel: +855 23 216 246 <br>
+					E-mail: echild.edu@gmail.com
+				  </p>
+				</div>
+			  </div>
+			</section>
+<!--Footer end-->
+      <script>
+			const btn = document.querySelector("button.mobile-menu-button");
+			const menu = document.querySelector(".mobile-menu");
+
+			btn.addEventListener("click", () => {
+				menu.classList.toggle("hidden");
+			});
+			let searchForm = document.querySelector('.search-form');
+
+			document.querySelector('#search-btn').onclick = () => {
+				searchForm.classList.toggle('active');
+			}
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle('show');
+			  }
+			window.onscroll = () =>{
+			  searchForm.classList.remove('active');
+			}
+      </script>
+</body>
+</html>

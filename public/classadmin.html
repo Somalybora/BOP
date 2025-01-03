@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="slide.css">
+		<link rel="stylesheet" href="w3.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Planète Enfants & Développement</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		<script src="path/to/your/carousel-library.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+		<style>
+			.search-form {
+				position: absolute;
+				top: 2rem;
+				right: 20rem;
+				width: 25rem;
+				height: 3rem;
+				background: #e9e9e9c0;
+				border-radius: .5rem;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				box-shadow: var(--box-shadow);
+				}
+
+				.search-form input {
+				height: 2rem;
+				width: 20rem;
+				margin-left: 10px;
+				background: none;
+				text-transform: none;
+				font-size: 1.3rem;
+				color: var(--black);
+				padding-right: 0 2.5rem;
+				}
+
+				 .search-form label {
+				font-size: 1.3rem;
+				margin-top: 10px;
+				padding-right: 1.5rem;
+				color: var(--black);
+				cursor: pointer;
+				}
+
+				 .search-form label:hover {
+				color: var(--green);
+				}
+				.w3-dropdown-hover {
+    			background-color: none;
+    			color: #000;
+				}
+		</style>
+	</head>
+	<body>
+		<div>
+		<!-- Navbar goes here -->
+		<nav class="bg-white light:bg-slate-900 rounded-sm px-12 py-8 ring-0 ring-slate-900/5 shadow-xl inline-flex justify-between w-full h-28 items-center z-50 border-1 fixed" style="font-family: Calibri;">
+			<div class="max-w-8xl mx-auto px-2">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-1">
+								<img src="image/logo_eng.png" alt="Logo" class="h-24 max-w-6xl">
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+                        <div class="md:hidden flex sm:hidden lg:flex items-center space-x-4 h-20 mt-6 bg-white">
+							<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="text-purple-700 bg-white hover:bg-white hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="about.html" class=" hover:text-purple-800 no-underline hover:no-underline">ABOUT US <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="background.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Background</a>
+									<hr>
+									<a href="importance.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">The Importance of ECCD</a>
+									<hr>
+									<a href="eccd.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">ECCD In Cambodia</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="resource.html" class="hover:text-purple-800 no-underline hover:no-underline">RESOURCES <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="official.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Officila & Reference Documents</a>
+									<hr>
+									<a href="rperson.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Resource Persons</a>
+									<hr>
+									<a href="https://moeys.gov.kh/en/early-childhood-education" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Useful Links</a>
+									<hr>
+									<a href="faq.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">FAQ</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="activity.html" class=" hover:text-purple-800 no-underline hover:no-underline">ACTIVITIES <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="psychomotricity.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Psychomotricity</a>
+									<hr>
+									<a href="science.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Science</a>
+									<hr>
+									<a href="social.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Social Activities</a>
+									<hr>
+									<a href="khmer.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Khmer</a>
+									<hr>
+									<a href="premaths.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Pre-Maths</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"><a href="teacher.html" class=" hover:text-purple-800 no-underline hover:no-underline">TEACHER TOOLBOX <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="classadmin.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Class Administration</a>
+									<hr>
+									<a href="teaching.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Teaching Materials</a>
+									<hr>
+									<a href="space.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Space/Decoration</a>
+									<hr>
+									<a href="material.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Material Productions</a>
+								  </div>
+							  </div>
+
+							<!--  <form action="" class="search-form sm:ml-20 lg:ml-28">
+								<input type="search" id="search-box" placeholder="Search here...">
+								<label for="search-box" class="fas fa-search"></label>
+							   </form> -->
+                          </div>
+						  <div class="w3-dropdown-hover whitespace-nowrap ml-10 mt-10 lg:gap-6">
+							<button class="bg-purple-600 hover:bg-purple-700 border-purple-600 h-12 w-40 rounded-md text-white hover:text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="tip&trick.html" class="hover:text-white no-underline hover:no-underline">TIPS & TRICKS</a></button>
+						  </div>
+						  <div class="w3-dropdown-hover ml-10 mt-12 whitespace-nowrap no-underline">
+							<button class="bg-white hover:bg-white text-purple-900 no-underline hover:text-purple-950 font-medium"><div class="rounded-full no-underline"><img src="image/uk.png" alt="en" class="h-10 no-underline bg-white"></div></button>
+							  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4">
+								<hr class="w-52 h-0.5 bg-orange-500">
+								<a href="index.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><div class="flex items-left rounded-full"><img src="image/uk.png" alt="en" class="h-10">&nbsp; English</div></a>
+								<hr>
+								<a href="index(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><div class="flex items-left rounded-full"><img src="image/world.png" alt="kh" class="h-10">&nbsp; Khmer~<span style="font-family: Siemreap;">ខ្មែរ</span></div></a>              
+							  </div>
+						  </div>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center ml-10">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-8 h-8 text-gray-500 hover:text-purple-600 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+		</nav>
+		<div class="hidden mobile-menu pt-[7.5rem] lg:flex">
+			<ul class="">
+				<li class="active block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover bg-inherit whitespace-nowrap ml-10">
+					  <button class="text-white bg-inherit text-2xl sm:text-xl lg:text-2xl font-medium"><a href="about.html" class=" hover:text-white no-underline hover:no-underline"><b>ABOUT US &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="background.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Background</a>
+						  <hr>
+						  <a href="importance.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">The Importance of ECCD</a>
+						  <hr>
+						  <a href="eccd.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">ECCD In Cambodia</a>
+						</div>
+					</div>
+				  </li>
+				  <hr>
+					<li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="resource.html" class="hover:text-white no-underline hover:no-underline"> <b>RESOURCES &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="official.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Officila & Reference Documents</a>
+						  <hr>
+						  <a href="rperson.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Resource Persons</a>
+						  <hr>
+						  <a href="https://moeys.gov.kh/en/early-childhood-education" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Useful Links</a>
+						  <hr>
+						  <a href="faq.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">FAQ</a>
+						</div>
+					</div>
+				  </li>
+							<hr>
+				  <li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="activity.html" class="hover:text-white no-underline hover:no-underline"><b>ACTIVITIES &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="psychomotricity.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Psychomotricity</a>
+						  <hr>
+						  <a href="science.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Science</a>
+						  <hr>
+						  <a href="social.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Social Activities</a>
+						  <hr>
+						  <a href="khmer.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Khmer</a>
+						  <hr>
+						  <a href="premaths.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><i class="fa fa-caret-right"></i> &nbsp;Pre-Maths</a>
+						</div>
+					</div>
+				  </li>
+					<hr>
+				  <li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-3xl sm:text-xl lg:text-2xl font-medium"><a href="teacher.html" class="hover:text-white no-underline hover:no-underline"><b>TEACHER TOOLBOX &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="classadmin.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Class Administration</a>
+						  <hr>
+						  <a href="teaching.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Teaching Materials</a>
+						  <hr>
+						  <a href="space.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Space/Decoration</a>
+						  <hr>
+						  <a href="material.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950">Material Productions</a>
+						</div>
+					</div>
+				  </li>
+				</ul>
+		</div>
+	</div>
+
+<!--header end-->
+<br>
+<!--slide start-->
+<section class="relative flex w-full">
+    <div class="slider">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner w-full">
+    
+        <div class="item active">
+        <img src="image/Teacher Toolbox/Teaching Materials Package/01-Teaching materials package.png" alt="teaching1" class="object-fit w-full" style="width:100%; height:700px; object-fit:cover;">
+        <div class="carousel-caption absolute mb-52" style="font-family:Staatliches">
+          <p class="text-center items-center text-9xl shadow-slate-500" style="text-shadow: 1.5px 1.5px 6px #130f40;">CLASS ADMINISTRACTION</p>
+          <br>
+        </div>
+        </div>
+    
+        <div class="item"> 
+        <img src="image/Teacher Toolbox/Teaching Materials Package/02-Teaching materials package.JPG" alt="teaching2" class="object-fit w-full" style="width:100%; height:700px; object-fit:cover;">
+        <div class="carousel-caption absolute mb-52" style="font-family:Staatliches">
+          <p class="text-center items-center text-9xl shadow-slate-500" style="text-shadow: 1.5px 1.5px 6px #130f40;">CLASS ADMINISTRACTION</p>
+          <br>
+        </div>
+      </div>
+    </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>
+    </div>
+    </section> 
+    <!--slide end-->
+    <section class="about text-left items-left justify-start sm:text-center sm:items-center sm:justify-center" style="font-family: Calibri;">
+        <br>
+        <div class="items-center justify-center flex mt-12 mb-12">
+          <img src="image/box.png" alt="box" class="h-48 items-center justify-center">
+        </div><br>
+        <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+          <p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24">Any professional can use written, visual or auditory materials to prepare activities or teach.
+                Any professional can use written, visual or auditory materials to prepare activities or teach.
+            This section provides resources, tips and advice to help manage a classroom and children and to improve teaching skills. <br>
+            In particular, you will find:
+          </p> 
+        </div>
+        <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+              <ul class="w-full ml-12 text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24 mb-12" style="font-family: Calibri;">
+                  <li>- Class administration book & materials</li>
+                  <li>- Teaching materials documents</li>
+                  <li>- Documents on classroom space management and decoration</li>
+                </ul>
+          </div> 
+        <hr class="w-2/5 h-1 mx-auto border-0 rounded mb-12 dark:bg-amber-500"> <br>
+<div class="flex items-center justify-center mb-16 font-serif text-3xl">
+    <button id="toggleScriptButton" class="flex items-center justify-center w-64 h-16 rounded-lg bg-white hover:text-white hover:bg-purple-900/75"style="font-family: Calibri;"><i class="fa-solid fa-chevron-down"></i>&nbsp; READ MORE</button>
+  </div>
+  <section class="bg-purple-500" id="script" style="display: none;">
+    <div class="flex items-center justify-center">
+    <div class=" mt-10 grid gap-12 grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 mx-10 mb-24">
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS2.png" alt="CPS2" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Battambang;">រូបភាពពណ៌_សម្ភារឧបទេស</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/C__រូបភាពពណ៌_សម្ភារឧបទេស_____១៥__៦_២០__.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/C__រូបភាពពណ៌_សម្ភារឧបទេស_____១៥__៦_២០__.pdf" class="text-5xl hidden" id="downloadLink2" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/C__រូបភាពពណ៌_សម្ភារឧបទេស_____១៥__៦_២០__.pdf', 'downloadLink2')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS3.png" alt="CPS3" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Calibri;">CPS Guidebook khmer_V5 Low</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/CPS Guidebook khmer_V5 Low.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/CPS Guidebook khmer_V5 Low.pdf" class="text-5xl hidden" id="downloadLink3" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/CPS Guidebook khmer_V5 Low.pdf', 'downloadLink3')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS4.png" alt="CPS4" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Calibri;">CPS Sub-decree No 245-2017</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/CPS Sub-decree No 245-2017.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/CPS Sub-decree No 245-2017.pdf" class="text-5xl hidden" id="downloadLink4" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/CPS Sub-decree No 245-2017.pdf', 'downloadLink4')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS5.png" alt="CPS5" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">ECCD Policy_KH_2010</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ECCD Policy_KH_2010.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ECCD Policy_KH_2010.pdf" class="text-5xl hidden" id="downloadLink5" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ECCD Policy_KH_2010.pdf', 'downloadLink5')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS6.png" alt="cover1" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">EN_Formal Preschool curriculum (5Y)_2006</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/EN_Formal Preschool curriculum (5Y)_2006_translation.doc" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/EN_Formal Preschool curriculum (5Y)_2006_translation.doc" class="text-5xl hidden" id="downloadLink6" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/EN_Formal Preschool curriculum (5Y)_2006_translation.doc', 'downloadLink6')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS8.png" alt="CPS8" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">Materials for community preschool</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/Materials for community preschool by lika_qualified by Chettana.doc" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/Materials for community preschool by lika_qualified by Chettana.doc" class="text-5xl hidden" id="downloadLink8" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/Materials for community preschool by lika_qualified by Chettana.doc', 'downloadLink8')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS10.png" alt="CPS10" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">Parent Education Manangement_V7</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/Parent Education Manangement_V7.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/Parent Education Manangement_V7.pdf" class="text-5xl hidden" id="downloadLink10" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/Parent Education Manangement_V7.pdf', 'downloadLink10')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS11.png" alt="CPS11" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Calibri;">Parenting guide book-Plan Intl</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/Parenting guide book-Plan Intl.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/Parenting guide book-Plan Intl.pdf" class="text-5xl hidden" id="downloadLink11" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/Parenting guide book-Plan Intl.pdf', 'downloadLink11')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS12.png" alt="CPS12" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Calibri;">Process and procedure for assessment of CPS</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/Praka 90 - Process and procedure for assessment of CPS.PDF" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/Praka 90 - Process and procedure for assessment of CPS.PDF" class="text-5xl hidden" id="downloadLink12" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/Praka 90 - Process and procedure for assessment of CPS.PDF', 'downloadLink12')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS13.png" alt="CPS13" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">Prakas No91 on Minimum Standards</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/Prakas No91 on Minimum Standards.PDF" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/Prakas No91 on Minimum Standards.PDF" class="text-5xl hidden" id="downloadLink13" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/Prakas No91 on Minimum Standards.PDF', 'downloadLink13')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS14.png" alt="CPS14" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">កម្មវិធីសិក្សាលម្អិតសម្រាប់មត្តេយ្យសិក្សារដ្ឋ</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/កម្មវិធីសិក្សាលម្អិតសម្រាប់មត្តេយ្យសិក្សារដ្ឋ.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/កម្មវិធីសិក្សាលម្អិតសម្រាប់មត្តេយ្យសិក្សារដ្ឋ.pdf" class="text-5xl hidden" id="downloadLink14" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/កម្មវិធីសិក្សាលម្អិតសម្រាប់មត្តេយ្យសិក្សារដ្ឋ.pdf', 'downloadLink14')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS15.png" alt="CPS15" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ការចិញ្ចឹមបីបាច់កុមារតូច_«ខ្លឹមសារគន្លឹះ»</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ការចិញ្ចឹមបីបាច់កុមារតូច_«ខ្លឹមសារគន្លឹះ».pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ការចិញ្ចឹមបីបាច់កុមារតូច_«ខ្លឹមសារគន្លឹះ».pdf" class="text-5xl hidden" id="downloadLink15" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ការចិញ្ចឹមបីបាច់កុមារតូច_«ខ្លឹមសារគន្លឹះ».pdf', 'downloadLink15')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS16.png" alt="CPS16" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ការចិញ្ចឹមបីបាច់កុមារតូច</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ការចិញ្ចឹមបីបាច់កុមារតូច.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ការចិញ្ចឹមបីបាច់កុមារតូច.pdf" class="text-5xl hidden" id="downloadLink16" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ការចិញ្ចឹមបីបាច់កុមារតូច.pdf', 'downloadLink16')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS18.png" alt="CPS18" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">កិច្ចតែងការបង្រៀនមុខវិជ្ជាបុរេគណិត_នែសត្វតើឯងស៊ីអ្វី</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/កិច្ចតែងការបង្រៀនមុខវិជ្ជាបុរេគណិត_នែសត្វតើឯងស៊ីអ្វី.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/កិច្ចតែងការបង្រៀនមុខវិជ្ជាបុរេគណិត_នែសត្វតើឯងស៊ីអ្វី.pdf" class="text-5xl hidden" id="downloadLink18" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/កិច្ចតែងការបង្រៀនមុខវិជ្ជាបុរេគណិត_នែសត្វតើឯងស៊ីអ្វី.pdf', 'downloadLink18')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS20.png" alt="CPS20" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">គោលនយោបាយជាតិស្តីពីគាំពារ_និងអភិវឌ្ឍន៍កុមារតូច_២០១០</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/គោលនយោបាយជាតិស្តីពីគាំពារ_និងអភិវឌ្ឍន៍កុមារតូច_២០១០.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/គោលនយោបាយជាតិស្តីពីគាំពារ_និងអភិវឌ្ឍន៍កុមារតូច_២០១០.pdf" class="text-5xl hidden" id="downloadLink19" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/គោលនយោបាយជាតិស្តីពីគាំពារ_និងអភិវឌ្ឍន៍កុមារតូច_២០១០.pdf', 'downloadLink19')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS21.png" alt="CPS21" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ចិត្តសាស្ដ្រសង្គមនៅមត្តេយ្យសិក្សា</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ចិត្តសាស្ដ្រសង្គមនៅមត្តេយ្យសិក្សា.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ចិត្តសាស្ដ្រសង្គមនៅមត្តេយ្យសិក្សា.pdf" class="text-5xl hidden" id="downloadLink20" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ចិត្តសាស្ដ្រសង្គមនៅមត្តេយ្យសិក្សា.pdf', 'downloadLink20')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS22.png" alt="CPS22" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ទម្រង់កិច្ចតែងការបង្រៀន</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ទម្រង់កិច្ចតែងការបង្រៀន.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ទម្រង់កិច្ចតែងការបង្រៀន.pdf" class="text-5xl hidden" id="downloadLink21" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ទម្រង់កិច្ចតែងការបង្រៀន.pdf', 'downloadLink21')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS26.png" alt="CPS26" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ផែនការយុទ្ធសាស្ដ្រវិស័យអប់រំ_២០២៤_២០២៨</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ផែនការយុទ្ធសាស្ដ្រវិស័យអប់រំ_២០២៤_២០២៨.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ផែនការយុទ្ធសាស្ដ្រវិស័យអប់រំ_២០២៤_២០២៨.pdf" class="text-5xl hidden" id="downloadLink24" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ផែនការយុទ្ធសាស្ដ្រវិស័យអប់រំ_២០២៤_២០២៨.pdf', 'downloadLink24')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS28.png" alt="CPS28" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">មុខវិជ្ជា ចិត្តចលភាព</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/មុខវិជ្ជា ចិត្តចលភាព.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/មុខវិជ្ជា ចិត្តចលភាព.pdf" class="text-5xl hidden" id="downloadLink26" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/មុខវិជ្ជា ចិត្តចលភាព.pdf', 'downloadLink26')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS29.png" alt="CPS29" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">មុខវិជ្ជា បុរេគណិត</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/មុខវិជ្ជា បុរេគណិត.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/មុខវិជ្ជា បុរេគណិត.pdf" class="text-5xl hidden" id="downloadLink27" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/មុខវិជ្ជា បុរេគណិត.pdf', 'downloadLink27')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS30.png" alt="CPS30" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">មុខវិជ្ជា ភាសាខ្មែរ</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/មុខវិជ្ជា ភាសាខ្មែរ.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/មុខវិជ្ជា ភាសាខ្មែរ.pdf" class="text-5xl hidden" id="downloadLink28" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/មុខវិជ្ជា ភាសាខ្មែរ.pdf', 'downloadLink28')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS31.png" alt="CPS31" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">មុខវិជ្ជា_វិទ្យាសាស្ដ្រ</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/មុខវិជ្ជា_វិទ្យាសាស្ដ្រ.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/មុខវិជ្ជា_វិទ្យាសាស្ដ្រ.pdf" class="text-5xl hidden" id="downloadLink29" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/មុខវិជ្ជា_វិទ្យាសាស្ដ្រ.pdf', 'downloadLink29')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS32.png" alt="CPS32" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">មុខវិជ្ជា_សិក្សាសង្គម</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/មុខវិជ្ជា_សិក្សាសង្គម.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/មុខវិជ្ជា_សិក្សាសង្គម.pdf" class="text-5xl hidden" id="downloadLink30" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/មុខវិជ្ជា_សិក្សាសង្គម.pdf', 'downloadLink30')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS35.png" alt="CP35" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Battambang;">សេចក្ដី_ណែនាំ_ស្ដីពី_ដំណើរ_ការ_គ្រឹះស្ថាន_មត្តេយ្យសិក្សា_សាធារណៈ_ និង_សេវា_អប់រំកុមារតូច_ ឆ្នាំសិក្សា_ ២០២៤-២០២៥</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/សេចក្ដី_ណែនាំ_ស្ដីពី_ដំណើរ_ការ_គ្រឹះស្ថាន_មត្តេយ្យសិក្សា_សាធារណៈ_ និង_សេវា_អប់រំកុមារតូច_ ឆ្នាំសិក្សា_ ២០២៤-២០២៥ (1).pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/សេចក្ដី_ណែនាំ_ស្ដីពី_ដំណើរ_ការ_គ្រឹះស្ថាន_មត្តេយ្យសិក្សា_សាធារណៈ_ និង_សេវា_អប់រំកុមារតូច_ ឆ្នាំសិក្សា_ ២០២៤-២០២៥ (1).pdf" class="text-5xl hidden" id="downloadLink33" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/សេចក្ដី_ណែនាំ_ស្ដីពី_ដំណើរ_ការ_គ្រឹះស្ថាន_មត្តេយ្យសិក្សា_សាធារណៈ_ និង_សេវា_អប់រំកុមារតូច_ ឆ្នាំសិក្សា_ ២០២៤-២០២៥ (1).pdf', 'downloadLink33')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS36.png" alt="CPS36" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ស្តង់ដាមត្តេយសិក្សាសហគមន៍</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ស្តង់ដាមត្តេយសិក្សាសហគមន៍.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ស្តង់ដាមត្តេយសិក្សាសហគមន៍.pdf" class="text-5xl hidden" id="downloadLink34" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ស្តង់ដាមត្តេយសិក្សាសហគមន៍.pdf', 'downloadLink34')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS37.png" alt="CPS37" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">អនុក្រឹត្យស្ដី... សិក្សា សហគមន៍</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/អនុក្រឹត្យស្ដី... សិក្សា សហគមន៍.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/អនុក្រឹត្យស្ដី... សិក្សា សហគមន៍.pdf" class="text-5xl hidden" id="downloadLink35" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/អនុក្រឹត្យស្ដី... សិក្សា សហគមន៍.pdf', 'downloadLink35')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS38.png" alt="CPS38" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ឯកសារស្រាវជ្រាវវិធីសាស្ត្របង្រៀនសម័យថ្មីសម្រាប់អាស៊ីខាងត្បូង</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ឯកសារស្រាវជ្រាវវិធីសាស្ត្របង្រៀនសម័យថ្មីសម្រាប់អាស៊ីខាងត្បូង.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ឯកសារស្រាវជ្រាវវិធីសាស្ត្របង្រៀនសម័យថ្មីសម្រាប់អាស៊ីខាងត្បូង.pdf" class="text-5xl hidden" id="downloadLink36" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ឯកសារស្រាវជ្រាវវិធីសាស្ត្របង្រៀនសម័យថ្មីសម្រាប់អាស៊ីខាងត្បូង.pdf', 'downloadLink36')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS33.png" alt="CPS33" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Battambang;">រូបភាពសន្លឹកផ្ទាត់ស្ដីពីការចិញ្ចឹមបីបាច់កុមារតូច</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/រូបភាពសន្លឹកផ្ទាត់ស្ដីពីការចិញ្ចឹមបីបាច់កុមារតូច.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/រូបភាពសន្លឹកផ្ទាត់ស្ដីពីការចិញ្ចឹមបីបាច់កុមារតូច.pdf" class="text-5xl hidden" id="downloadLink31" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/រូបភាពសន្លឹកផ្ទាត់ស្ដីពីការចិញ្ចឹមបីបាច់កុមារតូច.pdf', 'downloadLink31')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS34.png" alt="CPS34" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">រឿងទិទានសម្រាប់កុមារតូច_pdf</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/រឿងទិទានសម្រាប់កុមារតូច_pdf.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/រឿងទិទានសម្រាប់កុមារតូច_pdf.pdf" class="text-5xl hidden" id="downloadLink32" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/រឿងទិទានសម្រាប់កុមារតូច_pdf.pdf', 'downloadLink32')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS27.png" alt="CPS27" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ភាសាខ្មែរ</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ភាសាខ្មែរ.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ភាសាខ្មែរ.pdf" class="text-5xl hidden" id="downloadLink25" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ភាសាខ្មែរ.pdf', 'downloadLink25')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS25.png" alt="CPS25" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">បទបង្ហាញសៀវភៅគោលវិទ្យាសាស្រ្ត</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/បទបង្ហាញសៀវភៅគោលវិទ្យាសាស្រ្ត.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/បទបង្ហាញសៀវភៅគោលវិទ្យាសាស្រ្ត.pdf" class="text-5xl hidden" id="downloadLink23" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/បទបង្ហាញសៀវភៅគោលវិទ្យាសាស្រ្ត.pdf', 'downloadLink23')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS24.png" alt="CPS24" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ទម្រង់ផែនការប្រចាំថ្ងៃ</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ទម្រង់ផែនការប្រចាំថ្ងៃ.docx" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ទម្រង់ផែនការប្រចាំថ្ងៃ.docx" class="text-5xl hidden" id="downloadLink22" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ទម្រង់ផែនការប្រចាំថ្ងៃ.docx', 'downloadLink22')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS17.png" alt="CPS17" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ការផលិតសម្ភារៈល្បែងសម្រាប់កុមារតូច_pdf</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/ការផលិតសម្ភារៈល្បែងសម្រាប់កុមារតូច_pdf.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/ការផលិតសម្ភារៈល្បែងសម្រាប់កុមារតូច_pdf.pdf" class="text-5xl hidden" id="downloadLink17" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/ការផលិតសម្ភារៈល្បែងសម្រាប់កុមារតូច_pdf.pdf', 'downloadLink17')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS9.png" alt="CPS9" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">MOEYS-ECCD and Nutrition</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/MOEYS-ECCD and Nutrition.pptx" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/MOEYS-ECCD and Nutrition.pptx" class="text-5xl hidden" id="downloadLink9" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/MOEYS-ECCD and Nutrition.pptx', 'downloadLink9')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS7.png" alt="CPS7" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Calibri;">Free-play (pedagogy game)</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/Free-play (pedagogy game).pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/Free-play (pedagogy game).pdf" class="text-5xl hidden" id="downloadLink7" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/Free-play (pedagogy game).pdf', 'downloadLink7')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+        <img src="CPS/Image/CPS1.png" alt="CPS1" class="h-90">
+        <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ការគាំពារនិងការអភិវឌ្ឍកុមារតូច</h1>
+        <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+          <a href="CPS/1_1_ការគាំពារនិងការអភិវឌ្ឍកុមារតូច_Updated.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+          <a href="CPS/1_1_ការគាំពារនិងការអភិវឌ្ឍកុមារតូច_Updated.pdf" class="text-5xl hidden" id="downloadLink1" download><i class="fa-solid fa-eye"></i></a>
+          <button type="button" onclick="downloadFile('CPS/1_1_ការគាំពារនិងការអភិវឌ្ឍកុមារតូច_Updated.pdf', 'downloadLink1')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+</section>
+			<!--Footer start-->
+			<hr class="bg-orange-500 h-1">
+			<section class="bg-purple-900/85 w-full flex items-center justify-between h-auto text-xl sm:text-lg lg:text-md lg:items-left sm:justify-center lg:justify-between sm:items-center" style="font-family: Calibri;">
+			  <div class="flex flex-col lg:flex-row items-center justify-between w-full">
+				
+				<!-- Left Content Section -->
+				<div class="content mt-8 ml-24 px-3 w-full lg:w-auto lg:ml-8">
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">For information about this website please contact: <br>
+					Planète Enfants & Développement
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">43 Abdul Carime St. (21), Phnom Penh</p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">Office Hours:
+					Monday – Friday 09.00–13.30 hrs. & 14.00–17.00 hrs. (Except public holidays) <br>
+					Tel: +855 23 212 196
+				  </p>
+				  <br>
+				  <a href="https://web.facebook.com/PlaneteEnfantsetdeveloppementCambodia?_rdc=11&_rdr#" class="text-white text-3xl sm:text-xl lg:text-2xl no-underline hover:no-underline hover:text-blue-600">
+					<i class="fa-brands fa-facebook"></i>&ensp; Planète Enfants & Développement Cambodia
+				  </a>
+				</div>
+			
+				<!-- Right Box Section -->
+				<div class="box mt-16 ml-24 px-3 w-full lg:w-auto lg:ml-8">
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">For information about Preschool education in Cambodia please contact: <br>
+					Ministry of Education, Youth, and Sport
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">H.E PRAK KOSAL, Deputy Secretary General of NC-ECCD, and Director of Early Childhood <br>
+					Education Department, MoEYS
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl">#201, Preah Norodom Blvd, Phnom Penh, Cambodia <br>
+					H/P: +855 12 824 256 <br>
+					Tel: +855 23 216 246 <br>
+					E-mail: echild.edu@gmail.com
+				  </p>
+				</div>
+			  </div>
+			</section>
+      <!--Footer end-->
+      <script>
+			const btn = document.querySelector("button.mobile-menu-button");
+			const menu = document.querySelector(".mobile-menu");
+
+			btn.addEventListener("click", () => {
+				menu.classList.toggle("hidden");
+			});
+			let searchForm = document.querySelector('.search-form');
+
+			document.querySelector('#search-btn').onclick = () => {
+				searchForm.classList.toggle('active');
+			}
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle('show');
+			  }
+			window.onscroll = () =>{
+			  searchForm.classList.remove('active');
+			}
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleScriptButton = document.getElementById('toggleScriptButton');
+            const scriptSection = document.getElementById('script');
+            
+            toggleScriptButton.addEventListener('click', function() {
+                if (scriptSection.style.display === "none") {
+                    scriptSection.style.display = "block";
+                } else {
+                    scriptSection.style.display = "none";
+                }
+            });
+        });
+        function downloadFile(fileName, linkId) {
+          var downloadLink = document.getElementById(linkId);
+          downloadLink.click();
+        }
+    </script>
+</body>
+</html>

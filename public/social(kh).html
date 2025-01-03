@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="slide.css">
+		<link rel="stylesheet" href="w3.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Planète Enfants & Développement</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		<script src="path/to/your/carousel-library.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+		<style>
+			.search-form {
+				position: absolute;
+				top: 2rem;
+				right: 20rem;
+				width: 25rem;
+				height: 3rem;
+				background: #e9e9e9c0;
+				border-radius: .5rem;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				box-shadow: var(--box-shadow);
+				}
+
+				.search-form input {
+				height: 2rem;
+				width: 20rem;
+				margin-left: 10px;
+				background: none;
+				text-transform: none;
+				font-size: 1.3rem;
+				color: var(--black);
+				padding-right: 0 2.5rem;
+				}
+
+				 .search-form label {
+				font-size: 1.3rem;
+				margin-top: 10px;
+				padding-right: 1.5rem;
+				color: var(--black);
+				cursor: pointer;
+				}
+
+				 .search-form label:hover {
+				color: var(--green);
+				}
+				.w3-dropdown-hover {
+    			background-color: none;
+    			color: #000;
+				}
+		</style>
+	</head>
+	<body>
+		<div>
+		<!-- Navbar goes here -->
+		<nav class="bg-white light:bg-slate-900 rounded-sm px-12 py-8 ring-0 ring-slate-900/5 shadow-xl inline-flex justify-between w-full h-28 items-center z-50 border-1 fixed" style="font-family: Calibri;">
+			<div class="max-w-8xl mx-auto px-2">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="index(kh).html" class="flex items-center py-4 px-1">
+								<img src="image/LOGO-KH.png" alt="Logo" class="h-24 max-w-6xl">
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+                        <div class="md:hidden flex sm:hidden lg:flex items-center space-x-4 h-20 mt-6 bg-white">
+							<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="text-purple-700 bg-white hover:bg-white hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"style="font-family: Battambang;"><a href="about(kh).html" class=" hover:text-purple-800 no-underline hover:no-underline">អំពី​ BOP <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="background(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">សាវតា/ពត៍មាន</a>
+									<hr>
+									<a href="importance(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;"><span class="leading-relaxed">សារៈសំខាន់នៃការថែទាំ និងការអភិវឌ្ឍន៍កុមារតូច</span></a>
+									<hr>
+									<a href="eccd(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;"><span class="leading-relaxed">ការគាំពារ និងការអភិវឌ្ឍន៍កុមារតូចនៅកម្ពុជា</span></a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"style="font-family: Battambang;"><a href="resource(kh).html" class="hover:text-purple-800 no-underline hover:no-underline">ធនធាន <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="official(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">ឯកសារផ្លូវការ និងឯកសារយោង</a>
+									<hr>
+									<a href="rperson(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">ធនធានមនុស្ស</a>
+									<hr>
+									<a href="https://moeys.gov.kh/en/early-childhood-education" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">តំណភ្ជាប់ដែលមានអត្ថប្រយោជន៍</a>
+									<hr>
+									<a href="faq(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">សំណួរដែលសួរញឹកញាប់</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-xl lg:text-2xl font-medium"style="font-family: Battambang;"><a href="activity(kh).html" class=" hover:text-purple-800 no-underline hover:no-underline">សកម្មភាព <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="psychomotricity(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;ចិត្តចលភាព</a>
+									<hr>
+									<a href="science(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;វិទ្យាសាស្ត្រ</a>
+									<hr>
+									<a href="social(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;សកម្មភាពសង្គម</a>
+									<hr>
+									<a href="khmer(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;ខ្មែរ</a>
+									<hr>
+									<a href="premaths(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;បុរេគណិតវិទ្យា</a>
+								  </div>
+							  </div>
+							  <div class="w3-dropdown-hover whitespace-nowrap ml-10">
+								<button class="bg-white hover:bg-white text-purple-700 hover:text-purple-800 text-2xl sm:text-3xl lg:text-2xl font-medium"style="font-family: Battambang;"><a href="teacher(kh).html" class=" hover:text-purple-800 no-underline hover:no-underline">ឯកសារសម្រាប់គ្រូ <i class="fa-solid fa-chevron-down"></i></a></button>
+								  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+									<hr class="w-96 h-0.5 bg-orange-500">
+									<a href="classadmin(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">ប្រអប់សម្ភារៈសម្រាប់ការបង្រៀនរបស់គ្រូ</a>
+									<hr>
+									<a href="teaching(kh)html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">កញ្ចប់សម្ភារៈបង្រៀន</a>
+									<hr>
+									<a href="space(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">ទីធ្លា និងការតុបតែង</a>
+									<hr>
+									<a href="material(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline text-2xl sm:text-xl lg:text-2xl hover:text-purple-950"style="font-family: Battambang;">ការផលិតសម្ភារៈ</a>
+								  </div>
+							  </div>
+
+							<!--  <form action="" class="search-form sm:ml-20 lg:ml-28">
+								<input type="search" id="search-box" placeholder="Search here...">
+								<label for="search-box" class="fas fa-search"></label>
+							   </form> -->
+                          </div>
+						  <div class="w3-dropdown-hover whitespace-nowrap ml-10 mt-10 lg:gap-6">
+							<button class="bg-purple-600 hover:bg-purple-700 border-purple-600 h-12 w-52 rounded-md text-white hover:text-white text-2xl sm:text-xl lg:text-2xl font-medium"style="font-family: Battambang;"><a href="tip&trick(kh).html" class="hover:text-white no-underline hover:no-underline">គន្លឹះសម្រាប់គ្រូបង្រៀន</a></button>
+						  </div>
+						  <div class="w3-dropdown-hover ml-10 mt-12 whitespace-nowrap no-underline">
+							<button class="bg-white hover:bg-white text-purple-900 no-underline hover:text-purple-950 font-medium"><div class="rounded-full no-underline"><img src="image/world.png" alt="en" class="h-10 no-underline bg-white"></div></button>
+							  <div class="w3-dropdown-content bg-white w3-bar-block w3-card-4">
+								<hr class="w-52 h-0.5 bg-orange-500">
+								<a href="index(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><div class="flex items-left rounded-full"><img src="image/world.png" alt="en" class="h-10">&nbsp; Khmer~<span style="font-family: Siemreap;">ខ្មែរ</span></div></a>
+								<hr>
+								<a href="index.html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"><div class="flex items-left rounded-full"><img src="image/uk.png" alt="kh" class="h-10">&nbsp; English</div></a>              
+							  </div>
+						  </div>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center ml-10">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-8 h-8 text-gray-500 hover:text-purple-600 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+		</nav>
+		<div class="hidden mobile-menu pt-[7.5rem] lg:flex">
+			<ul class="">
+				<li class="active block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover bg-inherit whitespace-nowrap ml-10">
+					  <button class="text-white bg-inherit text-2xl sm:text-xl lg:text-2xl font-medium"style="font-family: Battambang;"><a href="about(kh).html" class=" hover:text-white no-underline hover:no-underline"><b>អំពី​ BOP &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="background(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">សាវតា/ពត៍មាន</a>
+						  <hr>
+						  <a href="importance(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;"><span class="leading-relaxed">សារៈសំខាន់នៃការថែទាំ និងការអភិវឌ្ឍន៍កុមារតូច</span></a>
+						  <hr>
+						  <a href="eccd(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;"><span class="leading-relaxed">ការគាំពារ និងការអភិវឌ្ឍន៍កុមារតូចនៅកម្ពុជា</span></a>
+						</div>
+					</div>
+				  </li>
+				  <hr>
+					<li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"style="font-family: Battambang;"><a href="resource(kh).html" class="hover:text-white no-underline hover:no-underline"> <b>ធនធាន &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="official(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">ឯកសារផ្លូវការ និងឯកសារយោង</a>
+						  <hr>
+						  <a href="rperson(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">ធនធានមនុស្ស</a>
+						  <hr>
+						  <a href="https://moeys.gov.kh/en/early-childhood-education" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">តំណភ្ជាប់ដែលមានអត្ថប្រយោជន៍</a>
+						  <hr>
+						  <a href="faq(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">សំណួរដែលសួរញឹកញាប់</a>
+						</div>
+					</div>
+				  </li>
+							<hr>
+				  <li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"><a href="activity(kh).html" class="hover:text-white no-underline hover:no-underline"style="font-family: Battambang;"><b>សកម្មភាព &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="psychomotricity(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;ចិត្តចលភាព</a>
+						  <hr>
+						  <a href="science(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;វិទ្យាសាស្ត្រ</a>
+						  <hr>
+						  <a href="social(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;សកម្មភាពសង្គម</a>
+						  <hr>
+						  <a href="khmer(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;ខ្មែរ</a>
+						  <hr>
+						  <a href="premaths.html(kh)" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;"><i class="fa fa-caret-right"></i> &nbsp;បុរេគណិតវិទ្យា</a>
+						</div>
+					</div>
+				  </li>
+					<hr>
+				  <li class="block text-sm px-1 py-2 text-white bg-purple-600">
+					<div class="w3-dropdown-hover whitespace-nowrap ml-10">
+					  <button class="bg-inherit text-white text-2xl sm:text-xl lg:text-2xl font-medium"style="font-family: Battambang;"><a href="teacher(kh).html" class="hover:text-white no-underline hover:no-underline"><b>ឯកសារសម្រាប់គ្រូ &nbsp; <i class="fa-solid fa-chevron-down"></i></b></a></button>
+						<div class="w3-dropdown-content bg-white w3-bar-block w3-card-4 z-10">
+						  <hr class="w-96 h-0.5 bg-orange-500">
+						  <a href="classadmin(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">ប្រអប់សម្ភារៈសម្រាប់ការបង្រៀនរបស់គ្រូ</a>
+						  <hr>
+						  <a href="teaching(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">កញ្ចប់សម្ភារៈបង្រៀន</a>
+						  <hr>
+						  <a href="space(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">ទីធ្លា និងការតុបតែង</a>
+						  <hr>
+						  <a href="material(kh).html" class="w3-bar-item bg-gray-100 hover:bg-white no-underline hover:no-underline hover:text-purple-950"style="font-family: Battambang;">ការផលិតសម្ភារៈ</a>
+						</div>
+					</div>
+				  </li>
+				</ul>
+		</div>
+	</div>
+	<!--content start-->
+<!--slide start-->
+<section class="relative flex w-full">
+	<div class="slider">
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	  </ol>
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner w-full">
+	
+		<div class="item active">
+		<img src="image/Activities/Psychomotricity/01-Field mission EU_Visit Kamot Arng standardized CPS_Pursat_20220113 (50).JPG" alt="social" class="object-fit w-full" style="width:100%; height:700px; object-fit:cover;">
+		<div class="carousel-caption absolute mb-52" style="font-family: Battambang;">
+		  <p class="text-center items-center text-9xl shadow-slate-500" style="text-shadow: 1.5px 1.5px 6px #130f40;">សកម្មភាពសង្គម</p>
+		  <br>      
+		</div>
+		</div>
+	  </div>
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	  </div>
+	</div>
+	</section> 
+	  <!--slide end-->
+	  <br>
+	  <section class="about text-left items-left justify-start sm:text-center sm:items-center sm:justify-center" style="font-family: Battambang;">
+		<br>
+		<div class="items-center justify-center flex mb-12">
+		  <img src="image/box.png" alt="box" class="h-48 items-center justify-center">
+		</div>
+		<br>
+		<div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+		  <p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-24"style="font-family: Battambang;">
+		  <span class="leading-relaxed">ការសិក្សាពីសង្គមគ្របដណ្តប់លើសកម្មភាពជាច្រើន ដែលអនុញ្ញាតឱ្យកុមារអភិវឌ្ឍដោយចំហជាមួយពិភពលោក និងអ្នកដទៃ និងជំនាញជាច្រើនទៀត។</span>
+		  </p>
+	</div> 
+	<hr class="w-2/6 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-amber-500"> <br>
+  <div class="flex items-center justify-center mb-12 font-serif text-3xl">
+	  <button id="toggleScriptButton" class="flex items-center justify-center w-64 h-16 rounded-lg bg-white hover:text-white hover:bg-purple-900/75 " style="font-family: Battambang;"><i class="fa-solid fa-chevron-down"></i>&nbsp; អានបន្ថែម</button>
+	</div>
+	<section class="bg-white" id="script" style="display: none;">
+	  <div class="grid grid-cols-2 gap-12">
+	  <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+		<p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-16"style="font-family: Battambang;">    
+		  <b>សិក្សាសង្គមរួមបញ្ចូលរួមមាន៖</b> <br>
+		  <br>
+			<span class="leading-relaxed">សិល្បៈ៖ គូរ ការផាត់ពណ៌ បត់ កាត់ ជាដើម។</span> <br>
+		  <br>
+		  <span class="leading-relaxed">សិល្បៈផ្លាស្ទិចគ្របដណ្តប់ទាំងសកម្មភាពបញ្ចេញមតិ និងការច្នៃប្រឌិតដែលនាំទៅដល់ការផលិតជាក់ស្តែង។ សកម្មភាពទាំងនេះរៀបចំកុមារឱ្យរៀនសរសេរតាមក្រាហ្វិក ប៉ុន្តែពួកគេក៏អភិវឌ្ឍជំនាញម៉ូតូ ភាពច្នៃប្រឌិត និង សោភ័ណភាពតាមរយៈការគូររូប ការផាត់ពណ៌ និងសូម្បីតែការងារដោយដៃ។</span> <br>
+		  <span class="leading-relaxed">កុមាររកឃើញឧបករណ៍ ជំនួយ និងសម្ភារៈផ្សេងៗ ហើយស្គាល់ពណ៌។</span> <br>
+  <br>
+  		ការអប់រំតន្ត្ <br>
+		<br>
+		<span class="leading-relaxed">ការអប់រំតន្ត្រីគឺជាសកម្មភាពសម្រាប់រៀនចង្វាក់ និងចម្រៀង។ វាគឺធ្វើឱ្យកុមារស្គាល់ឧបករណ៍ភ្លេង ស្រឡាញ់តន្ត្រី ចម្រៀង និងចង្វាក់ និងដើម្បីដាស់ទេពកោសល្យដែលលាក់កំបាំង ។</span> <br>
+		  <br>
+		  <span class="leading-relaxed">គោលបំណងនៃការអប់រំតន្ត្រីគឺ</span> <br>
+		  <br>
+		  &emsp;&emsp;    • <span class="leading-relaxed">ដើម្បីអភិវឌ្ឍសរីរាង្គ phonatory របស់កុមារ</span> <br>
+		  &emsp;&emsp;    • <span class="leading-relaxed">ដើម្បីអភិវឌ្ឍភាពប្រែប្រួលសិល្បៈរបស់កុមារ</span> <br>
+		  &emsp;&emsp;    • <span class="leading-relaxed">ដើម្បីបង្កើនសមត្ថភាពយល់ឃើញ និងការរើសអើងរបស់ពួកគេ តាមរយៈសំឡេង និងឧបករណ៍តន្ត្រី។</span>
+		  <br>
+		  <span class="leading-relaxed">ជាពិសេស បទចម្រៀងអាចឱ្យកុមារទទួលបានការអភិវឌ្ឍភាសា តាមរយៈលំហាត់បញ្ចេញសំឡេង និងការនិយាយ។ លំដាប់​នៃ​ពាក្យ​ចង្វាក់​បំប្លែង​កុមារ​ទៅ​នឹង​ចង្វាក់​នៃ​ការ​និយាយ ការ​បញ្ចេញ​សំឡេង និង​រចនាសម្ព័ន្ធ​នៃ​ភាសា​ផង​ដែរ។ ចុងចួន ក៏រៀបចំកុមារសម្រាប់ការអានដោយធ្វើឱ្យពួកគេដឹងពីភាសារបស់ពួកគេ និងវិធីដែលសំឡេងត្រូវបានបញ្ចូល គ្នាដើម្បីបង្កើតជាពាក្យ។ ជាចុងក្រោយ បទចម្រៀងដំណើរការលើការចងចាំ និងស្វែងយល់ពីរបៀបធ្វើសកម្មភាព ជាមួយពាក្យក្នុងវិធីរីករាយ។</span> <br>                
+		  <br>
+		  <b>សកម្មភាពប្រចាំថ្ងៃ និងទម្លាប់ល្អ</b> <br>
+		  <br>
+		  <span class="leading-relaxed">សកម្មភាពជីវិតជាក់ស្តែងជួយរៀបចំកុមារឱ្យរស់នៅក្នុងសង្គម ទទួលបានទម្លាប់ និងអាកប្បកិរិយាល្អព្រមទាំង អាកប្បកិរិយាដែលអាចឱ្យគាត់សម្របខ្លួនទៅនឹងតម្រូវការបរិស្ថានមួយចំនួន។</span> <br>
+		  <br>
+		  <span class="leading-relaxed">តាមរយៈសកម្មភាពនេះអនុញ្ញាតឱ្យកុមារ ៖</span> <br>
+		  <br>
+	  &emsp;&emsp;    • <span class="leading-relaxed">បណ្តុះគុណតម្លៃសង្គម និងវប្បធម៌ (ការគោរពខ្លួនឯង អ្នកដទៃ ប្រយោជន៍សាធារណៈ ស្មារតីនៃការ ចែករំលែក សាមគ្គីភាព ស្មារតីទទួលខុសត្រូវ ការអត់ឱន ការអភ័យទោស ។ល។)</span> <br>
+	  &emsp;&emsp;    • <span class="leading-relaxed">ដើម្បីអភិវឌ្ឍការស្រមើលស្រមៃនិងការគិតគូរ រិះគន់;</span> <br>
+	  &emsp;&emsp;    • <span class="leading-relaxed">ជ្រមុជខ្លួនទៅក្នុងភាពសម្បូរបែប និងតម្លៃនៃបរិស្ថានរបស់ពួកគេ;</span> <br>
+	  &emsp;&emsp;    • <span class="leading-relaxed">ដើម្បីត្រៀមខ្លួនសម្រាប់ជីវិតជាពលរដ្ឋដែលមានការទទួលខុសត្រូវ និងមានប្រយោជន៍នៃប្រទេសរបស់គាត់</span> <br>
+	  <br>
+		 <b class="text-center text-5xl"><i class="fa-solid fa-down-long"></i>&nbsp; លំហាត់អនុវត្ត</b>
+		</p>
+	  </div>
+  
+	<div class="container mb-16"> 
+	  <div class="bg-white text-left items-left justify-start sm:text-center sm:items-center sm:justify-center flex mb-12">
+		<p class="w-full  text-4xl sm:text-3xl lg:text-4xl text-left items-center justify-center px-16"style="font-family: Battambang;">    
+		  <span class="leading-relaxed">ទាំង​នេះ​ជា​កម្រង​​វីដេអូ​របស់​យើង​ដែល​អ្នក​អាច​មើល ឬ​ទាញ​យកបាន ៖</span>
+				</p>
+	  </div>
+	  <div class="vid-container">
+		<iframe id="vid_frame" src="https://www.youtube.com/embed/playlist?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT" frameborder="0" width="560" height="315"></iframe>
+	  </div>
+	  <div class="vid-list-container">
+		<div class="vid-list">
+		
+		  <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/7KwgmUd7Rjc?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+			<div class="thumb"><img src="https://i.ytimg.com/vi/7KwgmUd7Rjc/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGFUgVyhlMA8=&rs=AOn4CLDTkY7vnEKX8kSgLAH8Yn8fVbjJGQ"></div>
+		<div class="desc" style="font-family: Battambang;">សន្ទនាការគ្រប់គ្រងអារម្មណ៍”ខឹង” / "Angry" Emotion Management Conversation</div>
+		</div>
+	
+		<div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jXhNcdoWWQk?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+		  <div class="thumb">
+			<img src="https://i.ytimg.com/vi/jXhNcdoWWQk/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGE8gVShlMA8=&rs=AOn4CLBRI_p_FFjVSWSKCsrzn1n5j6VhUg">
+		  </div>
+		  <div class="desc" style="font-family: Battambang;">
+			សូនរូបត្រី / Fish Image Creating
+		  </div>
+		</div>
+		
+		  <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/sZ4qPTfHkkY?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+			<div class="thumb"><img src="https://i.ytimg.com/vi/sZ4qPTfHkkY/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGHIgOShBMA8=&rs=AOn4CLAhSlGsARHmRArAA9xKUdfLzWyGyA"></div>
+			<div class="desc" style="font-family: Battambang;">ចំការយើងស្រស់បំព្រង / Our Farm is Beautiful</div>
+		  </div>
+  
+		  <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/-iY8Dm32-N4?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+			<div class="thumb"><img src="https://i.ytimg.com/vi/-iY8Dm32-N4/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGFcgWShlMA8=&rs=AOn4CLAl8A0tRX7gifaTWX_tPjLX9uJvZg"></div>
+			<div class="desc" style="font-family: Battambang;">គូររូបផ្កា / Paint Flower Picture</div>
+		  </div>
+  
+		  <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yWYXjmU22KQ?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+			<div class="thumb"><img src="https://i.ytimg.com/vi/yWYXjmU22KQ/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGGUgQihCMA8=&rs=AOn4CLDQnZbLTULnu_EKv1tIBJoz38A2Wg"></div>
+			<div class="desc" style="font-family: Battambang;">គូរដោយសេរី / Draw Freely</div>
+		  </div>
+  
+		  <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/lc53SgrUffw?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+			<div class="thumb"><img src="https://i.ytimg.com/vi/lc53SgrUffw/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGGUgSShCMA8=&rs=AOn4CLCesLpUfqkhQSwZh1XV0bis9v8Rmw"></div>
+			<div class="desc" style="font-family: Battambang;">គូរផ្តាមស្លឹកឈើ / Draw Leaves</div>
+		  </div>
+  
+		  <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/zPjl1RhEvXs?list=PLktg6O9wQ3OSaMetAxiwiaD8xUNjQXprT'">
+			<div class="thumb"><img src="https://i.ytimg.com/vi/zPjl1RhEvXs/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGFwgWyhlMA8=&rs=AOn4CLAKl9G_5zQme26jIGbmVG7Tiu8K0g"></div>
+			<div class="desc" style="font-family: Battambang;">ត្បាញស្លឹកត្នោតនិងស្លឹកដូង / Weaving Palm and Coconut Leaves</div>
+		  </div>
+	  </div>
+	</div>
+	<div class="arrows">
+	  <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+		<div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+	  </div>
+	</div> 
+  </div>
+  <h1 class="text-6xl text-center flex items-center justify-center mt-8 mb-12" style="font-family: Battambang;"><span class="leading-relaxed">សន្លឹកសកម្មភាពនៃលំហាត់ សកម្មភាពសង្គម</span></h1>
+  <div class="flex items-center justify-center bg-purple-600">
+	  <div class=" mt-10 grid gap-12 grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 mx-10 mb-24">
+		<div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+		  <img src="Activity Sheet Khmer/Social/1-SOC.png" alt="1-PSC" class="h-90">
+		  <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Battambang;">ការគោរពពេលវេលា.pdf</h1>
+		  <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+			<a href="Activity Sheet Khmer/Social/ការគោរពពេលវេលា.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+			<a href="Activity Sheet Khmer/Social/ការគោរពពេលវេលា.pdf" class="text-5xl hidden" id="downloadLink1" download><i class="fa-solid fa-eye"></i></a>
+			<button type="button" onclick="downloadFile('Activity Sheet Khmer/Social/ការគោរពពេលវេលា.pdf', 'downloadLink1')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+		  </div>
+		</div>
+		<div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+		  <img src="Activity Sheet Khmer/Social/2-SOC.png" alt="2-PSC" class="h-90">
+		  <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">ការថែរក្សាបរិស្ថាន.pdf</h1>
+		  <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+			<a href="Activity Sheet Khmer/Social/ការថែរក្សាបរិស្ថាន.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+			<a href="Activity Sheet Khmer/Social/ការថែរក្សាបរិស្ថាន.pdf" class="text-5xl hidden" id="downloadLink2" download><i class="fa-solid fa-eye"></i></a>
+			<button type="button" onclick="downloadFile('Activity Sheet Khmer/Social/ការថែរក្សាបរិស្ថាន.pdf', 'downloadLink2')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+		  </div>
+		</div>
+		<div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+		  <img src="Activity Sheet Khmer/Social/3-SOC.png" alt="3-PSC" class="h-90">
+		  <h1 class="mt-8 text-white text-4xl font-serif mb-4"style="font-family: Battambang;">គំនូរគូរដោយដៃ.pdf</h1>
+		  <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+			<a href="Activity Sheet Khmer/Social/គំនូរគូរដោយដៃ.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+			<a href="Activity Sheet Khmer/Social/គំនូរគូរដោយដៃ.pdf" class="text-5xl hidden" id="downloadLink3" download><i class="fa-solid fa-eye"></i></a>
+			<button type="button" onclick="downloadFile('Activity Sheet Khmer/Social/គំនូរគូរដោយដៃ.pdf', 'downloadLink3')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+		  </div>
+		</div>
+		<div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+		  <img src="Activity Sheet Khmer/Social/4-SOC.png" alt="4-PSC" class="h-90">
+		  <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Battambang;">ភ្លើងសញ្ញាចរាចរណ៍.pdf</h1>
+		  <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+			<a href="Activity Sheet Khmer/Social/ភ្លើងសញ្ញាចរាចរណ៍.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+			<a href="Activity Sheet Khmer/Social/ភ្លើងសញ្ញាចរាចរណ៍.pdf" class="text-5xl hidden" id="downloadLink4" download><i class="fa-solid fa-eye"></i></a>
+			<button type="button" onclick="downloadFile('Activity Sheet Khmer/Social/ភ្លើងសញ្ញាចរាចរណ៍.pdf', 'downloadLink4')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+		  </div>
+		</div>
+		<div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+		  <img src="Activity Sheet Khmer/Social/5-SOC.png" alt="5-PSC" class="h-90">
+		  <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Battambang;">សំឡេងខ្លាំងនិងស្ងាត់.pdf</h1>
+		  <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+			<a href="Activity Sheet Khmer/Social/សំឡេងខ្លាំងនិងស្ងាត់.pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+			<a href="Activity Sheet Khmer/Social/សំឡេងខ្លាំងនិងស្ងាត់.pdf" class="text-5xl hidden" id="downloadLink5" download><i class="fa-solid fa-eye"></i></a>
+			<button type="button" onclick="downloadFile('Activity Sheet Khmer/Social/សំឡេងខ្លាំងនិងស្ងាត់.pdf', 'downloadLink5')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+		  </div>
+		</div>
+		<div class="inline-block text-center font-serif items-center justify-center flex flex-col">
+		  <img src="Activity Sheet Khmer/Social/6-SOC.png" alt="6-PSC" class="h-90">
+		  <h1 class="mt-8 text-white text-4xl font-serif mb-4" style="font-family: Battambang;">ស្គាល់អំពីប្រទេសរបស់ខ្ញុំ .pdf</h1>
+		  <div class="mt-2 w-auto h-16 rounded-lg bg-white px-10 py-6 flex justify-center items-center space-x-24 mb-20">
+			<a href="Activity Sheet Khmer/Social/ស្គាល់អំពីប្រទេសរបស់ខ្ញុំ .pdf" class="text-5xl"><i class="fa-solid fa-eye"></i></a>
+			<a href="Activity Sheet Khmer/Social/ស្គាល់អំពីប្រទេសរបស់ខ្ញុំ .pdf" class="text-5xl hidden" id="downloadLink6" download><i class="fa-solid fa-eye"></i></a>
+			<button type="button" onclick="downloadFile('Activity Sheet Khmer/Social/ស្គាល់អំពីប្រទេសរបស់ខ្ញុំ .pdf', 'downloadLink6')" class="text-5xl"><i class="fa-solid fa-download"></i></button>
+		  </div>
+		</div>
+	  </div>
+  </div>
+  </section>
+  </section>
+			<!--Footer start-->
+			<hr class="bg-orange-500 h-1">
+			<section class="bg-purple-900/85 w-full flex items-center justify-between h-auto text-xl sm:text-lg lg:text-md lg:items-left sm:justify-center lg:justify-between sm:items-center" style="font-family: Calibri;">
+			  <div class="flex flex-col lg:flex-row items-center justify-between w-full">
+				
+				<!-- Left Content Section -->
+				<div class="content mt-8 ml-24 px-3 w-full lg:w-auto lg:ml-8">
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl"style="font-family: Battambang;"> <span class="leading-relaxed">សម្រាប់ការទទួលបានពត៍មានអំពីវេទិកាបង្រៀននៅមត្តេយ្យសិក្សា សូមទំនាក់ទំនងមកកាន់៖</span>
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl"style="font-family: Battambang;"><span class="leading-relaxed">ផ្ទះលេខ ៤៣អា, ផ្លូវលេខ ២១, សង្កាត់ទនេ្លបាសាក់, ខណ្ឌចំការមន, រាជធានីភ្នំពេញ</span></p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl"style="font-family: Battambang;"><span class="leading-relaxed">ថ្ងៃចន្ទដល់សុក្រ ចាប់ពីម៉ោង ៨ព្រឹក ដល់ម៉ោង ១២រសៀល និងពីម៉ោង ១រសៀល ដល់ម៉ោង ៥រសៀល (ឈប់សម្រាកនៅថ្ងៃបុណ្យជាតិ)</span> <br>
+					លេខទូរស័ព្ទ៖ ០២៣​ ២៣៨ ៧៧៦
+				  </p>
+				  <br>
+				  <a href="https://web.facebook.com/PlaneteEnfantsetdeveloppementCambodia?_rdc=11&_rdr#" class="text-white text-3xl sm:text-xl lg:text-2xl no-underline hover:no-underline hover:text-blue-600">
+					<i class="fa-brands fa-facebook"></i>&ensp; Planète Enfants & Développement Cambodia
+				  </a>
+				</div>
+			
+				<!-- Right Box Section -->
+				<div class="box mt-8 ml-24 px-3 w-full lg:w-auto lg:ml-8">
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl"style="font-family: Battambang;"><span class="leading-relaxed">សម្រាប់ការទទួលបានពត៍មានអំពីការអប់រំនៅមត្តេយ្យសិក្សា សូមទំនាក់ទំនងមកកាន់៖</span>
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl"style="font-family: Battambang;"><span class="leading-relaxed">ក្រសួងអប់រំ យុវជន និងកីឡា
+					នាយកដ្ឋានអប់រំកុមារតូច
+					</span>
+				  </p>
+				  <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl"style="font-family: Battambang;"><span class="leading-relaxed">ផ្ទះលេខ ១៩៩, ផ្លូវលេខ ៤១ ផ្លូវព្រះនរោត្តម, ខណ្ឌចំការមន, រាជធានីភ្នំពេញ</span> <br>
+					លេខទូរស័ព្ទ៖ ០១៧ ៤១៤​​ ៦៧៨,  ប៉ុស្តិប្រៃសណីយ៍៖ ១២៣០៩ <br>
+				  </p> <br>
+				  <p class="text-white text-3xl sm:text-xl lg:text-2xl" style="font-family: Calibri;">E-mail: eccdcambodia.2021@gmail.com </p>
+				</div>
+			  </div>
+			</section>
+			<!--Footer end-->
+      <script>
+			const btn = document.querySelector("button.mobile-menu-button");
+			const menu = document.querySelector(".mobile-menu");
+
+			btn.addEventListener("click", () => {
+				menu.classList.toggle("hidden");
+			});
+			let searchForm = document.querySelector('.search-form');
+
+			document.querySelector('#search-btn').onclick = () => {
+				searchForm.classList.toggle('active');
+			}
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle('show');
+			  }
+			window.onscroll = () =>{
+			  searchForm.classList.remove('active');
+			}
+          //Button Script//
+          $(document).ready(function () {
+      $(".arrow-right").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "+=336"
+          }, 750);
+      });
+      $(".arrow-left").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "-=336"
+          }, 750);
+      });
+  });
+      </script>
+  </body>
+  </html>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const toggleScriptButton = document.getElementById('toggleScriptButton');
+          const scriptSection = document.getElementById('script');
+          
+          toggleScriptButton.addEventListener('click', function() {
+              if (scriptSection.style.display === "none") {
+                  scriptSection.style.display = "block";
+              } else {
+                  scriptSection.style.display = "none";
+              }
+          });
+      });
+  </script>
+<script>
+        document.getElementById('toggleAdminButton').addEventListener('click', function() {
+      const adminSection = document.getElementById('admin');
+      adminSection.classList.toggle('hidden');
+    });
+
+    document.getElementById('toggleTeachingButton').addEventListener('click', function() {
+      const teachingSection = document.getElementById('teaching');
+      teachingSection.classList.toggle('hidden');
+    });
+
+    document.getElementById('toggleSpaceButton').addEventListener('click', function() {
+      const spaceSection = document.getElementById('space');
+      spaceSection.classList.toggle('hidden');
+    });
+
+  </script>
